@@ -26,7 +26,8 @@
           <p class="intro-text">
               Jose Salazar <br> 
               <span class="intro-desc">Acclaimed Author and The Chosen One</span>
-            <img class="header-img" src="img/aliens.jpg">
+            <img class="header-img" alt="Chosen One and Alien Friends" 
+            src="img/aliens.jpg" />
             <span class="img-caption block">Pictured: The Chosen One with Peter the Friendly Alien and all his friends</span>
           </p>
         </div>
@@ -45,12 +46,12 @@
            <label for="password">Phone Number</label>
            <input type="password" id="password" name="user_password">
            <label for="address">Street Address</label>
-           <input type="address" id="address" name="street_address">
+           <input type="text" id="address" name="street_address">
            <label for="city">City</label>
-           <input type="city" id="city" name="user_city">
+           <input type="text" id="city" name="user_city">
            <label for="state">State</label>
            <select id="state" name="user_state">
-               <option selected="true" disabled>Choose State</option>
+               <option selected disabled>Choose State</option>
                <option value="california">California</option>
                <option value="arizona">Arizona</option>
                <option value="nevada">Nevada</option>
@@ -58,10 +59,9 @@
                <option value="new_mexico">New Mexico</option>
                <option value="utah">Utah</option>
                <option value="really_far">Somewhere really far away...</option>
-             </optgroup>
            </select>
            <label for="zip">Zip Code</label>
-           <input type="zip" id="zip" name="user_zip">
+           <input type="text" id="zip" name="user_zip">
          </fieldset>
 
          <hr class="form-bar">
@@ -78,13 +78,14 @@
            <input type="checkbox" id="psr" value="paper_scissor_rock" name="paper_scissor_rock">
            <label class="light" for="psr">Up To Date Standings on the Paper/Scissor/Rock Tournament</label>
            <br>
-           <input type="checkbox" id="psr" value="paper_scissor_rock" name="paper_scissor_rock">
-           <label class="light" for="psr">Creepy Emails to your Sister</label>
+           <input type="checkbox" id="creepy_emails" value="creepy_emails" 
+           name="creepy_emails">
+           <label class="light" for="creepy_emails">Creepy Emails to your Sister</label>
            <br>
 
            <label class="label-clear">Newsletter Format</label>
            <input type="radio" id="html" value="html" name="pref_html">
-           <label for="pref_html" class="light">HTML</label><br>
+           <label for="html" class="light">HTML</label><br>
            <input type="radio" id="plain_text" value="plain_text" name="plain_text">
            <label for="plain_text" class="light">Plain Text</label>
            
@@ -109,14 +110,14 @@
            <br>
            <input type="checkbox" id="other" value="other" name="other">
            <label class="light" for="other">Other:</label>
-           <input type="other-desc" id="other-desc" name="other-desc">
+           <input type="text" id="other-desc" name="other-desc">
            <br>
 
            <label class="label-clear">I Would Die For The Chosen One:</label>
-           <input type="radio" id="html" value="html" name="pref_html">
-           <label for="pref_html" class="light">Yes! I would gladly sacrifice myself and my loved ones.</label><br>
-           <input type="radio" id="over_13" value="over_13" name="user_age">
-           <label for="over_13" class="light">Nah... I am a coward and do not want to enjoy awesome alien hospitality. I will surely die a horrible death on Earth due to global warming and mad cow disease as predicted by The Chosen One.</label>
+           <input type="radio" id="yes" value="yes" name="salvation_yes">
+           <label for="yes" class="light">Yes! I would gladly sacrifice myself and my loved ones.</label><br>
+           <input type="radio" id="no" value="no" name="salvation_no">
+           <label for="no" class="light">Nah... I am a coward and do not want to enjoy awesome alien hospitality. I will surely die a horrible death on Earth due to global warming and mad cow disease as predicted by The Chosen One.</label>
          </fieldset>
          
            <button type="submit">Sign Up!</button>
