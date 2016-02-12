@@ -61,7 +61,8 @@ input[type="checkbox"] {
   margin: 0 4px 8px 0;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   background-color: #FFFF66;
 }
 
@@ -74,21 +75,29 @@ select {
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #4bc970;
+  background-color: #2D3945;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #3ac162;
+  border: 1px solid #FFF;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
 }
 
+button:hover {
+  background: #455565;
+}
+
 fieldset {
   margin-bottom: 0;
   border: none;
+}
+
+.last-fs {
+  margin-bottom: 7%;
 }
 
 legend {
@@ -180,6 +189,27 @@ hr.form-bar {
     font-style: italic;
     display: block;
     margin-top: 10px;
+    font-size: 1.3em;
+}
+
+.intro-desc {
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+    font-size: .75em;
+}
+
+.img-caption {
+  font-size: .60em;
+  font-weight: normal;
+}
+
+.block {
+  display: block;
+}
+
+.header-img {
+  margin-top: 10px;
 }
 
 
