@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <div class="header">
+        <div class="banner-top">
+          <div class="container">  
+            <h1 class="colored-header">The Key To Eternal Salvation Newsletter</h1>
+          </div>
+        </div>
+        <div class="container">
+          <h2>Sign Up For My Newsletter!</h2>
+          <p>
+            Greetings Friend,<br /> 
+            The world is ending, and the only way you'll survive is by reading my newsletter! By subscribing I will show you the light to a spot in the eternal shuttle that will be coming for us in 2017!<br />
+            Follow me to a more bright future, where the friendly incoming alien race will shower us with margaritas, iPads, and lots of money.<br />
+            A new life awaits you with new alien friends who like all the things we do! And me, your fearless leader, who will guide us into this crusade to a more hopeful future!<br />
+            <span class="intro-text">- Jose Salazar Acclaimed Author and The Chosen One</span>
+          </p>
+        </div>
+        <hr class="top-header">
+        <hr class="bot-header">
+      </div>
+       <form action="index.html" method="post">
+         
+         
+         <fieldset>
+          <legend class="form-header">Contact Information</legend> 
+           <label for="name">Full Name</label>
+           <input type="text" id="name" name="user_name" required>
+           <label for="mail">Email</label>
+           <input type="email" id="mail" name="user_email" required>
+           <label for="password">Phone Number</label>
+           <input type="password" id="password" name="user_password">
+           <label for="address">Street Address</label>
+           <input type="address" id="address" name="street_address">
+           <label for="city">City</label>
+           <input type="city" id="city" name="user_city">
+           <label for="state">State</label>
+           <select id="state" name="user_state">
+               <option selected="true" disabled>Choose State</option>
+               <option value="california">California</option>
+               <option value="arizona">Arizona</option>
+               <option value="nevada">Nevada</option>
+               <option value="texas">Texas</option>
+               <option value="new_mexico">New Mexico</option>
+               <option value="utah">Utah</option>
+               <option value="really_far">Somewhere really far away...</option>
+             </optgroup>
+           </select>
+           <label for="zip">Zip Code</label>
+           <input type="zip" id="zip" name="user_zip">
+         </fieldset>
+
+         <hr class="form-bar">
+         
+         <fieldset>
+          <legend class="form-header">Newsletter</legend>
+           <label>Select the newsletters/updates you would like to receive:</label>
+           <input type="checkbox" id="food" value="food_eaten" name="food_eaten">
+           <label class="light" for="food">Foods I Am Eating</label>
+           <br>
+           <input type="checkbox" id="sights" value="sights_seen" name="sights_seen">
+           <label class="light" for="sights">Cool Stuff I Saw</label>
+           <br>
+           <input type="checkbox" id="psr" value="paper_scissor_rock" name="paper_scissor_rock">
+           <label class="light" for="psr">Up To Date Standings on the Paper/Scissor/Rock Tournament</label>
+           <br>
+           <input type="checkbox" id="psr" value="paper_scissor_rock" name="paper_scissor_rock">
+           <label class="light" for="psr">Creepy Emails to your Sister</label>
+           <br>
+
+           <label class="label-clear">Newsletter Format</label>
+           <input type="radio" id="html" value="html" name="pref_html">
+           <label for="pref_html" class="light">HTML</label><br>
+           <input type="radio" id="plain_text" value="plain_text" name="plain_text">
+           <label for="plain_text" class="light">Plain Text</label>
+           
+           <label class="label-clear" for="bio">Other Suggestions:</label>
+           <textarea id="bio" name="user_bio"></textarea>
+           <p class="disclaimer">*Please note, I don't listen to suggestions. Because I am a genius.</p>
+         </fieldset>
+
+         <hr class="form-bar">
+         
+         <fieldset>
+          <legend class="form-header">About you</legend>
+           <label>I am willing to sacrifice to The Chosen One:</label>
+           <input type="checkbox" id="money" value="life_savings" name="life_savings">
+           <label class="light" for="money">My Life Savings</label>
+           <br>
+           <input type="checkbox" id="vehicle" value="plain_text" name="vehicle">
+           <label class="light" for="vehicle">My Vehicle</label>
+           <br>
+           <input type="checkbox" id="wives" value="wives" name="wives">
+           <label class="light" for="wives">My Highly Attractive Female Relative To Be One of The Chosen One's Many Wives (Non-Attractive Tributes Will Be Returned)</label>
+           <br>
+           <input type="checkbox" id="other" value="other" name="other">
+           <label class="light" for="other">Other:</label>
+           <input type="other-desc" id="other-desc" name="other-desc">
+           <br>
+
+           <label class="label-clear">I Would Die For The Chosen One:</label>
+           <input type="radio" id="html" value="html" name="pref_html">
+           <label for="pref_html" class="light">Yes! I would gladly sacrifice myself and my loved ones.</label><br>
+           <input type="radio" id="over_13" value="over_13" name="user_age">
+           <label for="over_13" class="light">Nah... I am a coward and do not want to enjoy awesome alien hospitality. I will surely die a horrible death on Earth due to global warming and mad cow disease as predicted by The Chosen One.</label>
+         </fieldset>
+         
+           <button type="submit">Sign Up!</button>
+      </form>     
+      <p class="copyright">&copy; Copyright Jose Salazar, The Chosen One</p>
+    </body>
+
+</html>
+
+
+
+
+
+
