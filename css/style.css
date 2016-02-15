@@ -13,7 +13,6 @@ form {
   width: 100%;
   margin: 10px auto;
   padding: 10px 0;
-  background: #f4f7f8;
   border-radius: 8px;
 }
 
@@ -23,19 +22,10 @@ h1 {
 }
 
 input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="city"],
-input[type="zip"],
-input[type="address"],
 input[type="tel"],
-input[type="other-desc"],
-input[type="time"],
-input[type="url"],
+input[type="date"],
+input[type="email"],
+input[id="zip"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
@@ -52,8 +42,20 @@ select {
   margin-bottom: 30px;
 }
 
-input[type="zip"] {
-  width: 55%;
+input[name="other-desc"] {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 2px 10px;
+  width: 70%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px; 
+
 }
 
 input[type="radio"],
@@ -160,7 +162,6 @@ hr.form-bar {
 }
 
 .container {
-  width: 80%;
   margin: 0 auto;
   text-align: center;
 }
@@ -219,13 +220,40 @@ hr.form-bar {
 
 @media screen and (min-width: 480px) {
 
-  form {
-    width: 65%;
-    max-width: 1000px;
+  form,
+  .container,
+  hr.top-header,
+  hr.bot-header {
+    width: 80%;
   }
 
   hr.form-bar {
     width: 100%;   
 }
+
+  input[id="zip"],
+  input[name="other-desc"] {
+    width: 55%;
+}
+
+}
+
+@media screen and (min-width: 760px) {
+
+  form,
+  .container,
+  hr.top-header,
+  hr.bot-header {
+    width: 65%;
+    max-width: 1024px;
+  }
+
+  form {
+    background-color: transparent;
+  }
+
+  fieldset {
+    margin: 4% 0;
+  }
 
 }
