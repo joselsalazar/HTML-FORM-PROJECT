@@ -70,7 +70,7 @@ textarea:focus {
 
 select {
   padding: 6px;
-  height: 32px;
+  height: 46px;
   border-radius: 2px;
 }
 
@@ -213,6 +213,14 @@ hr.form-bar {
   margin-top: 10px;
 }
 
+.red {
+  color: #FF0000;
+}
+
+.align_right {
+  text-align: right;
+}
+
 
 /*===============================
   MEDIA QUERIES
@@ -231,9 +239,22 @@ hr.form-bar {
     width: 100%;   
 }
 
-  input[id="zip"],
-  input[name="other-desc"] {
-    width: 55%;
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+#state {
+  width: 75%;
+}
+
+#zip {
+  width: 35%;
+}
+
+.contact-info label {
+  width: 25%;
+  float: left;
+  line-height: 2.5;
 }
 
 }
